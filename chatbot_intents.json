@@ -1,0 +1,64 @@
+{
+  "intents": [
+  {
+      "tag": "saudacao",
+      "patterns": ["ola", "bom dia", "boa tarde", "boa noite", "good morning", "hi", "hello", "eae", "oi", "ei", "tudo bem", "saudações", "e ai", "fala ai", "coe", "buenas noches", "buenos dias", "hey", "koe", "alo"],
+      "responses": ["Olá, sou seu assistente virtual, em que posso te ajudar?", "Oi, tudo bem? Posso te ajudar?", "Ei! Como vai? Como posso te ajudar?", "Tudo bem com você? Posso te ajudar com algo?", "Olá, posso te ajudar?", "Opa, como vai? Em que posso te ajudar?", "Olá, que bom ter você aqui! Como posso te ajudar?", "Oii! Em que posso ajudá-lo?", "Hey! Tudo bem? Digite sua duvida pra mim", "Opa! Como vai você? Qual sua duvida?", "Olá amigo! Com o que deseja que eu te ajude hoje?"],
+      "context": [""]
+    },
+    {
+      "tag": "quem_e_voce",
+      "patterns": ["Qual seu nome", "quem voce", "quem é", "como se chama"],
+      "responses": ["Meu nome é MatGo, seu assistente virtual bancário para retirada de dúvidas", "Me chamo MatGo, sou seu robô pessoal para tirar suas dúvidas", "Prazer, meu nome é MatGo! Sou seu assistente virtual para retirada de dúvidas"],
+      "context": [""]
+    },
+	{
+      "tag": "vencimento_fatura",
+      "patterns": ["qual vencimento fatura?", "vencimento fatura", "data de vencimento", "data fatura", "data pagar", "data cartão"],
+      "responses": ["O vencimento da fatura do seu cartão é XX/XX", "Sua fatura se vence no dia XX/XX", "Você pode pagar sua fatura até XX/XX", "A fatura do seu cartão será no dia XX/XX, evite cobranças de juros"],
+      "context": [""]
+    },	
+	{
+      "tag": "vencimento_cartao",
+      "patterns": ["vencimento cartão", "data validade", "validade cartão", "cartão vence"],
+      "responses": ["Você pode verificar a validade do seu cartão na frente do mesmo no formato XX/XX", "A data de validade do seu cartão está disponivel no próprio cartão ou pelo app"],
+      "context": [""]
+    },	
+	{
+      "tag": "aumento_limite",
+      "patterns": ["aumentar limite", "aumento de limite", "aumentar limite cartão", "solicitar limite", "aumentar crédito"],
+      "responses": ["Solicite o aumento do limite do seu cartão através do app ou da nossa central de atendimento", "Para solicitar o limite de crédito do seu cartão você deve ligar para nossa central ou fazer a solicitação através do aplicativo"],
+      "context": [""]
+    },	
+	{
+      "tag": "consulta_limite",
+      "patterns": ["consulta limite", "saber limite", "limite atual cartão", "limite cartão", "limite disponivel", "limite total"],
+      "responses": ["O seu limite total do cartão é R$XX,XX e o limite disponível é R$XX,XX", "Atualmente seu cartão tem um limite disponivél de R$XX,XX e um total de R$XX,XX"],
+      "context": [""]
+    },
+    {
+      "tag": "solicitar_cartao_adicional",
+      "patterns": ["Criar cartão adicional", "cadastrar cartão adicional", "obter cartão adicional", "solicitar adicional", "ter adicional cartão"],
+      "responses": ["Para solicitar um cartão adicional você deve ligar para nossa central ou se preferir poderá fazer a solicitação através do aplicativo", "Caso queira um cartão adicional ligue para nossa central ou solicite pelo seu app"],
+      "context": [""]
+    },	
+    {
+      "tag": "bloquear_cartao",
+      "patterns": ["bloquear cartão", "bloqueio de cartão", "trancar cartão"],
+      "responses": ["Para bloquear seu cartão acesse a aba 'Cartões' no aplicativo, escolha o cartão que deseja e aperte em 'Bloquear'", "Você pode bloquear seu cartão através do aplicativo"],
+      "context": [""]
+    },	
+    {
+      "tag": "desbloquear_cartao",
+      "patterns": ["desbloqueio cartão", "desbloquear cartão", "liberar cartão"],
+      "responses": ["Para desbloquear seu cartão acesse o aplicativo e tenha seu cartão em mãos. Caso prefira, ligue para nossa central", "Você pode desbloquear seu cartão ligando para central de atendimento ou pelo aplicativo. Não se esqueça de estar com seu documento e cartão em mãos no momento do desbloqueio"],
+      "context": [""]
+    },
+    	{
+      "tag": "outro_assunto",
+      "patterns": [],
+      "responses": ["Desculpe, não sei nada sobre isso"],
+      "context": [""]
+    }
+  ]
+}
